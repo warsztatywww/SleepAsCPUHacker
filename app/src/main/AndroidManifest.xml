@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.krzysh.sleepasandroid.captcha.cpuhacker">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/captcha_label"
+        android:theme="@style/Theme.SleepAsCPUHacker">
+
+        <activity
+            android:name=".CPUHackerCaptchaActivity"
+            android:launchMode="singleTop"
+            android:label="@string/captcha_label"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            >
+            <meta-data android:name="com.urbandroid.sleep.captcha.meta.has_difficulty" android:value="false"/>
+            <intent-filter>
+                <action android:name="com.urbandroid.sleep.captcha.intent.action.OPEN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
